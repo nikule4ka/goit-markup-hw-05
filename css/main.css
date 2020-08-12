@@ -108,6 +108,14 @@ a {
       rgba(47, 48, 58, 0.8)
     ),
     url(../images/Header.jpg);
+
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -270,7 +278,7 @@ a {
   height: 4px;
   left: 0;
   bottom: 0;
-  border-radius: 4px;
+  border-radius: 2px;
   background-color: var(--accent-color);
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -279,13 +287,10 @@ a {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current {
-  color: var(--accent-color);
-}
-
-.link.primary {
   color: var(--accent-color);
 }
 
