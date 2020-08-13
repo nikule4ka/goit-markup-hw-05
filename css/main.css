@@ -403,7 +403,6 @@ a {
 
 .our-team.list {
   display: flex;
-  padding-bottom: 24px;
 }
 
 .our-team.list .item {
@@ -449,15 +448,17 @@ a {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-media:hover {
+.item-links:hover .box-media {
   border-radius: 50%;
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
+  outline: none;
 }
 
 /* our clients */
